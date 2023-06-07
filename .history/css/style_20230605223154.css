@@ -123,7 +123,7 @@ header{
     -o-transition: all .5s ease-in-out;
 }
 /* animation la barre du milieu disparait  */
-.bar:checked {
+.show_nav .bar{
     width: 0;
     background: transparent;
 }

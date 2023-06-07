@@ -123,7 +123,7 @@ header{
     -o-transition: all .5s ease-in-out;
 }
 /* animation la barre du milieu disparait  */
-.bar:checked {
+.show_nav .bar{
     width: 0;
     background: transparent;
 }
@@ -161,14 +161,14 @@ header{
      -ms-transform: translateY(12px) ;
      -o-transform: translateY(12px) ;
 }
-.bar:checked .bar::before{
+.show_nav .bar::before{
     transform: rotate3d(45deg);
     -webkit-transform: rotate3d(45deg);
     -moz-transform: rotate3d(45deg);
     -ms-transform: rotate3d(45deg);
     -o-transform: rotate3d(45deg);
 }
-.bar:checked .bar::after{
+.bar::after{
     transform: rotate3d(-45deg);
     -webkit-transform: rotate3d(-45deg);
     -moz-transform: rotate3d(-45deg);

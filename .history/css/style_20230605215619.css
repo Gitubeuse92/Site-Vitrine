@@ -42,14 +42,9 @@ header{
     top: 6rem;
     right: 0;
     list-style-type: none;
-      transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
 }
 .show_nav {
-    background-color: #b59898bf;
+    background-color: #b59898fa;
     z-index: 1;
     width: 100%;
     text-align: center;
@@ -95,7 +90,7 @@ header{
 .menu1 li:hover > a::after{
     width: 100%;
 }
-/*menu hamburguer */
+/* toggle menu */
 .burger{
     display: block;
     position:relative;
@@ -115,15 +110,8 @@ header{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    /* animation le menu apparait lentement*/
-      transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
 }
-/* animation la barre du milieu disparait  */
-.bar:checked {
+.show_nav .bar{
     width: 0;
     background: transparent;
 }
@@ -139,11 +127,6 @@ header{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
 }
 
 .bar::before{
@@ -161,25 +144,13 @@ header{
      -ms-transform: translateY(12px) ;
      -o-transform: translateY(12px) ;
 }
-.bar:checked .bar::before{
-    transform: rotate3d(45deg);
-    -webkit-transform: rotate3d(45deg);
-    -moz-transform: rotate3d(45deg);
-    -ms-transform: rotate3d(45deg);
-    -o-transform: rotate3d(45deg);
+.show_nav .bar::before{
+    transform: trans;
+    -webkit-transform: trans;
+    -moz-transform: trans;
+    -ms-transform: trans;
+    -o-transform: trans;
 }
-.bar:checked .bar::after{
-    transform: rotate3d(-45deg);
-    -webkit-transform: rotate3d(-45deg);
-    -moz-transform: rotate3d(-45deg);
-    -ms-transform: rotate3d(-45deg);
-    -o-transform: rotate3d(-45deg);
-}
-
-
-
-
-
 /* banner */
 .show_containeur1{
     top:20rem;
